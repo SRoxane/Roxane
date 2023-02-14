@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./css/Death.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>-->
+</head>
+
+<body>
+    <div class="container">
+        <header>Death certificate</header>
+
+        <form action="/mort" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Defucnt</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Surname of deceased</label>
+                            <input type="text" name="prenomde" placeholder="surname" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name of deceased</label>
+                            <input type="text" name="nomde" placeholder="Enter the deceased given name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Deceased On the</label>
+                            <input type="date" name="datedeath" placeholder="date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>At</label>
+                            <input type="text" name="deathplace" placeholder="death place" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Born on the</label>
+                            <input type="date" name="datenaiss" placeholder="birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>At</label>
+                            <input type="text" name="placenaiss" placeholder="born place" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="sexed" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Marital status</label>
+                            <select name="mastatus" required>
+                                <option disabled selected>Select status</option>
+                                <option>Married</option>
+                                <option>Single</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Profession</label>
+                            <input type="text" name="profd" placeholder="deceased occupation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Resident at</label>
+                            <input type="text" name="residence" placeholder="residence" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="details personal">
+                    <span class="title">Parents</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Son / daughter of</label>
+                            <input type="text" name="nomp" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>And of</label>
+                            <input type="text" name="nomm" placeholder="Enter mother name" required>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="details ID">
+                    <span class="title">Appointment</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>User name</label>
+                            <input type="text" name="nomc" placeholder="your user name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>password</label>
+                            <input type="password" name="pwdC" placeholder="your password" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mail</label>
+                            <input type="email" name="mailc" placeholder="your mail adress" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" name="datea" placeholder="the date of the appointment" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Time</label>
+                            <input type="time" name="timea" placeholder="appointment time" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>the chosen town hall</label>
+                            <select name="th" required>
+                                <option disabled selected>Select your town hall</option>
+                                <option>Marie de yaoundé 1</option>
+                                <option>Marie de yaoundé 1</option>
+                                <option>Marie de yaoundé 1</option>
+                            </select>
+                        </div>
+                    </div> 
+                </div>
+                <div class="details ID">
+                    <span class="title">Supporting document</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Deceased declaration</label>
+                            <input type="file" name="decladeath" placeholder="your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>photocopy of defunct birthday act</label>
+                            <input type="file" name="birthdef" placeholder="your residence" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="http://localhost:8080/client">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                    </a>
+
+
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/req.js"></script>
+</body>
+
+</html>

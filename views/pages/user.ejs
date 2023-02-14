@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/admin.css">
+    <title>Cameroun| le webmaster</title>
+</head>
+
+<body>
+    <%- include('../partials/sidebar'); %>
+    <div class="container">
+        <%- include('../partials/headera'); %>
+        <div class="content">
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>User</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>E-mail</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <% for(i=0; i<result.length; i++){ %>
+                                <tr>
+                                    <td><%= result[i].Idc %></td>
+                                    <td><%= result[i].NomC %></td>
+                                    <td><%= result[i].mailC %></td>
+                                    <td><%= result[i].pwdC %></td>
+                                    
+                                    <!-- <td><a href="#" class="btn">Delete</a></td> -->
+                                </tr>
+                            <%} %>
+                        </tr>
+                    </table>
+                </div>
+                <!-- <div class="new-students">
+                    <div class="title">
+                        <h2>New Students</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>infos</th>
+                        </tr>
+                        <% for(i=0; i<result.length; i++){ %>
+                            <tr>
+                                <td><%= result[i].IdA %></td>
+                                <td><%= result[i].NomA %></td>
+                                <td><img src="./img/info.png" alt=""></td>
+                            </tr>
+                        <%} %>
+                        
+                    </table>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/scriptA.js"></script>
+</html>

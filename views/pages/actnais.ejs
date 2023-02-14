@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./css/req.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+    <div class="container">
+        <header>Birth certificate</header>
+
+        <form action="/naissance" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">child</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name of child</label>
+                            <input type="text" name="nomen" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="datenais" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="sexe" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of birth</label>
+                            <select name="placenaiss" required>
+                                <option disabled selected>Select your place</option>
+                                <option>Yaoundé</option>
+                                <option>Dschang</option>
+                                <option>Kumba</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="details personal">
+                    <span class="title">Father</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name of father</label>
+                            <input type="text" name="nomp" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="datep" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of birth</label>
+                            <select name="lieunaisp" required>
+                                <option disabled selected>Select your place</option>
+                                <option>Yaoundé</option>
+                                <option>Dschang</option>
+                                <option>Kumba</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" name="profp" placeholder="Enter your ccupation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" name="idcnip" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>place of residence</label>
+                            <select name="domiclep" required>
+                                <option disabled selected>Select your place</option>
+                                <option>Yaoundé</option>
+                                <option>Dschang</option>
+                                <option>Kumba</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="details personal">
+                    <span class="title">Mother</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Name of mother</label>
+                            <input type="text" name="nomm" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="datem" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Place of birth</label>
+                            <select name="lieunaism" required>
+                                <option disabled selected>Select your place</option>
+                                <option>Yaoundé</option>
+                                <option>Dschang</option>
+                                <option>Kumba</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" name="profm" placeholder="Enter your ccupation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" name="idcnim" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>place of residence</label>
+                            <select name="domiclem" required>
+                                <option disabled selected>Select your place</option>
+                                <option>Yaoundé</option>
+                                <option>Dschang</option>
+                                <option>Kumba</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="details ID">
+                    <span class="title">Appointment</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>User name</label>
+                            <input type="text" name="nomC" placeholder="your user name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>password</label>
+                            <input type="password" name="pwdC" placeholder="your password" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mail</label>
+                            <input type="email" name="mailc" placeholder="your mail adress" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date</label>
+                            <input type="date" name="datea" placeholder="the date of the appointment" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Time</label>
+                            <input type="time" name="timea" placeholder="appointment time" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>the chosen town hall</label>
+                            <select name="th" required>
+                                <option disabled selected>Select your town hall</option>
+                                <option>Marie de yaoundé 1</option>
+                                <option>Marie de yaoundé 1</option>
+                                <option>Marie de yaoundé 1</option>
+                            </select>
+                        </div>
+                    </div> 
+                </div>
+                <div class="details ID">
+                    <span class="title">Supporting document</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Declaration of birth</label>
+                            <input type="file" name="declanais" placeholder="declarattion" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>National Identity Card of father</label>
+                            <input type="file" name="cnip" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>National Identity Card of mother</label>
+                            <input type="file" name="cnim" placeholder="Enter nationality" required>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="http://localhost:8080/client">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                    </a>
+                    
+                    
+                    <button class="sumbit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/req.js"></script>
+</body>
+</html>

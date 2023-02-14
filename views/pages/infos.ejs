@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Information</title>
+</head>
+
+<body>
+    <header>
+        <h1>CMR</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="home"><a href="http://localhost:8080/infos">Home</a></li>
+                <li class="active"><a href="#">Information</a></li>
+                <!-- <li><a href="#">Admin</a></li> -->
+                <li><a href="http://localhost:8080/login">Login</a></li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Useful information</p>
+            <p class="msg">As part of the creation and modification of a civil act and or a Cameroonian identity document
+                Some prerequisites will be required for each service you want to perform on our platform. All of these prerequisites are available on the document to download. </p>
+            <button class="cta"><a href="#">Download Now!</a></button>
+            
+        </section>
+
+        <section class="right">
+            <img src="./img/undraw_diary_re_4jpc (1).svg" alt="Langing image">
+            <button class="cta"><a href="http://localhost:8080/login">start!</a></button>
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>

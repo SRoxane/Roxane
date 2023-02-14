@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Cameroun | Acte civile </title>
+</head>
+
+<body>
+    <header>
+        <h1>CMR.</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href="#">Acceuil</a></li>
+                <li><a href="http://localhost:8080/infos">Information</a></li>
+                <!-- <li><a href="#">Admin</a></li> -->
+                <li><a href="http://localhost:8080/login">Login</a></li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Welcome to CMR.</p>
+            <p class="msg">The platform of excellence for your civil acts and your various identity documents.
+                We help you with all your administrative procedures in Cameroon</p>
+            <button class="cta"><a href="http://localhost:8080/infos">start!</a></button>
+        </section>
+
+        <section class="right">
+            <img src="./img/undraw_diary_re_4jpc (1).svg" alt="Langing image">
+        </section>
+
+    </section>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
